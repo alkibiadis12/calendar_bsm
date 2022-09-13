@@ -1,0 +1,29 @@
+.list_item {
+  height: 6rem;
+  list-style: none;
+}
+
+/* It overrides the background color from Card.module.css */
+.list_item:hover {
+  background-color: rgb(237, 235, 233) !important;
+}
+
+.link {
+  background-color: inherit;
+  color: rgb(3, 120, 124);
+  border: none;
+  padding: 1.3rem;
+  height: 100%;
+  text-align: left;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: rgb(213, 17, 31);
+}
+
+.dialog {
+  position: absolute;
+  top: 10px;
+}

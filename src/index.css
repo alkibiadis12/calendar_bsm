@@ -1,0 +1,69 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* reseting the values */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* fluent ui remove padding */
+/* Really bad practice to do it here, I know :( */
+.title-126,
+.title-114,
+.title-125,
+.inner-123,
+.inner-112,
+.label-138,
+.scrollableContent-112 {
+  padding: 0;
+  margin: 0;
+}
+
+/* custom scrollbar style */
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(146, 145, 145);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(237, 235, 233);
+  border-radius: 100vw;
+  border: 0.05rem solid rgb(146, 145, 145);
+}
+
+/* for firefox */
+@supports (scrollbar-color: rgb(237, 235, 233) rgb(146, 145, 145)) {
+  * {
+    scrollbar-color: rgb(237, 235, 233) rgb(146, 145, 145);
+    scrollbar-width: thin;
+  }
+}

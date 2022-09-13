@@ -1,0 +1,41 @@
+.headerContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 30rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 40rem 1fr;
+}
+
+.date_time_loc_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+/* **************************************** */
+/* BELLOW 700px (Smaller tablets )*/
+/* **************************************** */
+@media (max-width: 44em) {
+  .headerContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25rem 30rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 6fr 1.5fr;
+  }
+
+  .date_time_loc_container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4rem;
+    padding: 1rem;
+  }
+}
