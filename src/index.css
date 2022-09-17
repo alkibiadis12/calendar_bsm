@@ -29,17 +29,17 @@ html {
   font-size: 62.5%;
 }
 
-/* fluent ui remove padding */
+/* fluent ui remove padding and margin*/
 /* Really bad practice to do it here, I know :( */
-.title-126,
-.title-114,
-.title-125,
-.inner-123,
-.inner-112,
-.label-138,
-.scrollableContent-112 {
-  padding: 0;
-  margin: 0;
+
+.ms-Dialog-header > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ms-Dialog-inner {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* custom scrollbar style */

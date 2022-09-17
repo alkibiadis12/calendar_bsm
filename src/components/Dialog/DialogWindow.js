@@ -17,6 +17,26 @@ initializeIcons();
 //************************************ */
 //STYLES
 //************************************ */
+// const dialogStyles = {
+//   root: {
+//     backgroundColor: "rgb(243,242,241)",
+//     width: "100%",
+//     height: "100vh",
+//     position: "relative",
+//     margin: "0",
+//   },
+//   main: {
+//     minWidth: "70% !important",
+//     position: "absolute",
+//     left: "50%",
+//     top: "50%",
+//     transform: "translate(-50%, -50%)",
+//     borderRadius: "10px",
+//     overflow: "hidden",
+//   },
+//   ".ms-Dialog-inner": { margin: "0 !important", padding: "0 !important" },
+// };
+
 const dialogStyles = {
   root: {
     backgroundColor: "rgb(243,242,241)",
@@ -85,7 +105,7 @@ const DialogWindow = (props) => {
   //************************************ */
 
   return (
-    <React.Fragment>
+    <div className='styles.reset'>
       <Dialog
         hidden={hideDialog}
         onDismiss={toggleHideDialog}
@@ -103,7 +123,7 @@ const DialogWindow = (props) => {
           <Footer data={props.data} />
         </div>
       </Dialog>
-    </React.Fragment>
+    </div>
   );
 };
 

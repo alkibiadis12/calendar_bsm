@@ -1,3 +1,8 @@
+.reset > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .headerContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
